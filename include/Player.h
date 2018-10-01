@@ -1,9 +1,14 @@
+#pragma once
+#include "ColorToken.h"
+
+
 class Player
 {
     public:
 
-    int main();
+        void put();
 
     private:
-
+        int wins;
+        ColorToken secretCode[4];
 };
