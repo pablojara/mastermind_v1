@@ -1,0 +1,8 @@
+class Mastermind
+{
+    public:
+
+    private:
+
+
+};
