@@ -5,12 +5,16 @@
 #include <stdlib.h>
 
 
-void Mastermind::main()
+int main()
 {
     
     Player *maker = new Player();
     Player *guesser = new Player();
     Board *mainBoard = new Board();
+
+    maker->setSecretCode(mainBoard);
+    
+    mainBoard->printSecretCode();
 
    /* maker.put();
 

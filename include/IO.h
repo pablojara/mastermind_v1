@@ -1,9 +1,14 @@
+#include "ColorToken.h"
+#include "Board.h"
+
 class IO
 {
 
     public:
 
-    void printBoard();
+    IO();
+    void printBoard(Board *board);
+    ColorToken askColor();
 
     private:
 

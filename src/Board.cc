@@ -1,5 +1,5 @@
 #include "include/Board.h"
-
+#include <iostream>
 
 Board::Board()
 {
@@ -23,4 +23,23 @@ Board::Board()
     
     win = false;
 
+}
+
+void Board::setSecretCode(ColorToken *auxSecretCode)
+{
+    std::cout << auxSecretCode[1].getColor() << std::endl;
+    this->secretCode = auxSecretCode;
+}
+
+void Board::printSecretCode()
+{
+    
+    std::cout << "The secret code is: ";
+
+    for(int i = 0; i < 4; i++)
+    {
+        std::cout << this->secretCode[i].getColor();
+    }
+
+    std::cout << std::endl;
 }
