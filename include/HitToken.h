@@ -4,6 +4,7 @@ class HitToken
 {
 
 public:
+    HitToken();
     void setHit(bool hit);
     
 private:

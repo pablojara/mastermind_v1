@@ -31,7 +31,7 @@ void Board::setSecretCode(ColorToken *auxSecretCode)
     this->secretCode = auxSecretCode;
 }
 
-void Board::printSecretCode()
+void Board::printSecretCode()  /* TODO: remove from this and move to IO.h */
 {
     
     std::cout << "The secret code is: ";

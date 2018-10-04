@@ -14,6 +14,7 @@ class Board
     void putMatch();
     bool getWin();
     void printSecretCode();
+    ColorToken *getColors();
 
     private:
 
